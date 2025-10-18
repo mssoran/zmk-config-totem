@@ -36,14 +36,32 @@
             compatible = "zmk,combos";
             combo_esc {
                 timeout-ms = <50>;
-                key-positions = <0 1>;
+                key-positions = <21 22>;
                 bindings = <&kp ESC>;
+            };
+            combo_del {
+                timeout-ms = <50>;
+                key-positions = <25 26>;
+                bindings = <&kp DEL>;
             };
             combo_tvp {
                 timeout-ms = <100>;
                 key-positions = <11 12 13>;
                 bindings = <&tog TVP1>;
             };
+            combo_scrolup {
+                timeout-ms = <50>;
+                key-position = <15 16>;
+                bindings = <&msc SCRL_UP>;
+                layers = <LNAV>;
+            };
+            combo_scroldown {
+                timeout-ms = <50>;
+                key-position = <25 26>;
+                bindings = <&msc SCRL_DOWN>;
+                layers = <LNAV>;
+            };
+
     };
 
     macros {
@@ -128,7 +146,7 @@ label= "LSYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp GRAVE   &kp AT        &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp PLUS                 &kp PIPE      &kp PERCENT    &kp N8        &kp SQT       &kp BSLH
+                &kp GRAVE   &kp AT        &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp PLUS                 &kp PIPE      &kp PERCENT    &caps_word    &kp SQT       &kp BSLH
                 &kp CARET   &kp DOLLAR    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp ASTERISK             &kp AMPERSAND &kp EQUAL      &kp EXCL      &kp DQT       &kp COLON
     &kp GRAVE   &kp PERCENT &kp TILDE     &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp MINUS                &kp HASH      &kp UNDERSCORE &kp LESS_THAN &kp GREATER_THAN &kp FSLH    &kp BSLH
                                         &trans      &trans      &trans         &trans      &trans    &trans      
