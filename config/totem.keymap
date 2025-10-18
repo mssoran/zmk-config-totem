@@ -36,12 +36,12 @@
             compatible = "zmk,combos";
             combo_esc {
                 timeout-ms = <50>;
-                key-positions = <21 22>;
+                key-positions = <23 24>;
                 bindings = <&kp ESC>;
             };
             combo_del {
                 timeout-ms = <50>;
-                key-positions = <25 26>;
+                key-positions = <27 28>;
                 bindings = <&kp DEL>;
             };
             combo_tvp {
@@ -51,13 +51,13 @@
             };
             combo_scrolup {
                 timeout-ms = <50>;
-                key-positions = <15 16>;
+                key-positions = <16 17>;
                 bindings = <&msc SCRL_UP>;
                 layers = <LNAV>;
             };
             combo_scroldown {
                 timeout-ms = <50>;
-                key-positions = <25 26>;
+                key-positions = <27 28>;
                 bindings = <&msc SCRL_DOWN>;
                 layers = <LNAV>;
             };
@@ -206,7 +206,7 @@ label= "FUN"                               ;
                 &trans      &kp RC(UP)    &kp RC(LEFT)         &kp RC(RIGHT)         &kp PLUS                 &trans        &kp N7      &kp N8       &kp N9      &trans
                 &trans      &kp RC(DOWN)  &kp LS(LG(LBKT))     &kp LS(LG(RBKT))      &kp ASTERISK             &trans        &kp N4      &kp N5       &kp N6      &trans
     &trans      &trans      &trans        &kp LS(LG(GRAVE))    &kp LG(GRAVE)         &kp MINUS                &kp N0        &kp N1      &kp N2       &kp N3      &kp BSLH    &trans
-                                        &trans     &to LNAV    &trans                                     &trans           &trans         &trans
+                                        &trans     &to LFUN    &trans                                     &trans           &trans         &trans
                         >;
                 };
 
